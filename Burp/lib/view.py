@@ -270,6 +270,7 @@ class View:
         advisory_pane.setEditable(False)
         advisory_pane.setEnabled(True)
         advisory_pane.setContentType("text/html")
+        advisory_pane.putClientPorpterty("html.disable", None)
         link_listener = LinkListener()
         advisory_pane.addHyperlinkListener(link_listener)
         advisory = "<html><b>Location</b>: {}<br><br>{}</html>"
